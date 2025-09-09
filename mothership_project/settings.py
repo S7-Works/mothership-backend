@@ -27,7 +27,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'mothership.middleware.ButtrBaseAuthMiddleware',
 ]
+
+BUTTRBASE_API_URL = 'https://api.buttrbase.com/mothership'
 
 ROOT_URLCONF = 'mothership_project.urls'
 
